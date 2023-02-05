@@ -1,0 +1,55 @@
+.location {
+    background-color: #062226;
+    box-shadow: 1px 1px 6px #000;
+    padding: 1em 1em 1em;
+    margin-bottom: 4em;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.5em;
+    transform: scale(1.1);
+    box-shadow: 0 0 0.8em rgba(58, 246, 58, 0.637);
+}
+
+
+.location_name {
+    text-align: center;
+    margin-bottom: 0.5em;
+    color: rgb(82, 159, 4);
+    filter: brightness(1.1);
+}
+
+
+.location_list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.location_item {
+    display: grid;
+    gap: 0.3em;
+    text-align: center;
+    font-weight: 300;
+    color: #aaa;
+}
+
+.location_label {
+    font-weight: 550;
+    color: white;
+}
+
+
+.location{
+    animation: location 2s infinite;
+}
+
+
+@keyframes location {
+   0% {
+    transform: translate3d(12px, 50%, 3em);
+   } 
+
+   100% {
+    transform: rotateY(10deg);
+   }
+}
