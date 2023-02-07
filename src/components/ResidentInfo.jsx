@@ -1,14 +1,13 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import "./styles/residentInfo.css";
+import "./styles/ResidentInfo.css"
 
-
+ 
   const ResidentInfo = ({ url }) => {
   const [character, setCharacter] = useState();
 
   useEffect(() => {
-    axios
-      .get(url)
+    axios.get(url)
       .then((res) => setCharacter(res.data))
       .catch((err) => console.log(err));
   }, []);

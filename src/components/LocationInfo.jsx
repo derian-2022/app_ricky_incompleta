@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles/LocationInfo.css";
+import "./styles/LocationInfo.css"
 
 const LocationInfo = ({ location }) => {
   return (
@@ -19,6 +19,7 @@ const LocationInfo = ({ location }) => {
           {location?.residents.length}
         </li>
       </ul>
+      
     </article>
   );
 };
